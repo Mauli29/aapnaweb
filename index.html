@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>APNA SEM | Student Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+      <div class="logo">APNA SEM</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#signup">Create Account</a></li>
+        <li><a href="#" class="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Welcome to APNA SEM</h1>
+    <p>One Platform for Notes, Previous Year Question Papers & Important Topics</p>
+    <button>Explore Now</button>
+  </section>
+
+  <!-- Resources -->
+  <section class="resources" id="resources">
+    <h2>Student Resources</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3><a href="notes.html">📘 Notes</a></h3><h3></h3>
+        <p>Semester-wise subject notes for BA, BSc, BCS & more.</p>
+      </div>
+
+      <div class="card">
+        <h3>📝 Question Papers</h3>
+        <p>University previous year question papers.</p>
+      </div>
+
+      <div class="card">
+        <h3>⭐ Important Topics</h3>
+        <p>Exam-oriented important topics & concepts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About APNA SEM</h2>
+    <p>
+      APNA SEM is a student-friendly platform designed to help university students
+      access study materials easily. Our goal is to support students in exams and learning.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 APNA SEM | Made for Students ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

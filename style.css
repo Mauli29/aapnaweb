@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e34f23;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: -260px;          /* start hidden on LEFT */
+  width: 260px;
+  height: 100vh;
+  background: rgb(255, 248, 248);
+  list-style: none;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 5px 0 20px rgba(0,0,0,0.15);
+  transition: left 0.4s ease;
+  z-index: 2000;
+}
+
+.nav-links li {
+  padding: 15px 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ACTIVE MENU (opens LEFT → RIGHT) */
+.nav-links.active {
+  left: 0;
+}
+
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #2563eb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resources h2,
+.about h2,
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact */
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+ 
+/*notes section*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body .login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+}
+
+/* HEADER */
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 40px;
+  background: rgba(255,255,255,0.95);
+}
+
+.logo-img {
+  width: 55px;
+}
+
+/* MAIN */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 20px;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  width: 300px;
+}
+
+/* INFO */
+.info-box ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.info-box li {
+  margin: 12px 0;
+}
+
+/* 3D CARD */
+.card-3d {
+  width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+  transform: perspective(800px) rotateX(0deg);
+  transition: 0.4s;
+}
+
+.card-3d:hover {
+  transform: perspective(800px) rotateX(6deg) translateY(-5px);
+}
+
+.card-3d h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card-3d select,
+.card-3d button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.card-3d button {
+  background: linear-gradient(135deg, #2563eb, #ad56ff);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-3d button:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>APNA SEM | Student Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <img src="logo.png" class="logo-img">
+  <div>
+    <h1>Swami Ramanand Teerth Marathwada University</h1>
+    <p>Shri Shivaji College, Parbhani</p>
+  </div>
+</header>
+
+<div class="login-container">
+
+  <!-- LEFT INFO -->
+  <div class="info-box glass">
+    <h2>📘 STUDENT PORTAL</h2>
+    <ul>
+      <li>📄 Previous Year Question Papers</li>
+      <li>📚 Notes (BSc / BCS)</li>
+      <li>⭐ Important Topics</li>
+      <li>📝 Exam Updates</li>
+    </ul>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="form-box card-3d">
+    <h2>Select Details</h2>
+        
+    </select>
+    <select id="department" onchange="loadCourses()">
+  <option value="">Select Department</option>
+  <option value="arts">Arts</option>
+  <option value="science">Science</option>
+  <option value="commerce">Commerce</option>
+  <option value="cs">Computer Science</option>
+</select>
+
+<select id="course">
+  <option value="">Select Course</option>
+   <option value="">BA</option>
+    <option value="">BSc</option>
+    <option value="">BCS</option>
+    <option value="">BCA</option>
+    <option value="">BCom</option>
+    <option value="">BBA</option>
+    <option value="">DATA Science</option>
+  </select>
+
+<select id="year">
+  <option value="">Select Year</option>
+  <option value="FY">First Year (FY)</option>
+  <option value="SY">Second Year (SY)</option>
+  <option value="TY">Third Year (TY)</option>
+</select>
+
+
+    <button onclick="window.location.href='continue.html'">Continue</button>
+
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
